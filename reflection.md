@@ -9,16 +9,16 @@ After running the initial human-written prototype, I have found the following fi
 ## Part H - Final Reflection
 
 1. **What did you build before using AI?**  
-Before using AI, I built a basic Python prototype for the SmartCare clinic that used lists and dictionaries to record patient names, practitioners, and appointment times. While it worked for basic data entry, it had significant limitations, such as lacking validation for double-bookings.
+Before using AI, I created a basic prototype in PYTHON for a SmartCare clinic that used lists and dictionaries to store patient names, practitioners, and appointment times. It worked fine for basic data entry but it had significant limitations, including lacking check validation for a double-bookings.
 
-3. **What did AI help you understand?**
-Using Microsoft Copilot as a tutor helped me better understand how to clearly explain dictionary structures and why conditional checks (like `if not appointments:`) are vital to prevent crashes when accessing empty lists. 
+2. **What did AI help you understand?**  
+With the help of Microsoft Copilot as a tutor, it helped me to better understand dictionary structures and why conditional checks (e.g, "if not appointments:") are necessary to prevent crashes when dealing with empty lists. 
 
-4. **Did AI make assumptions?**
-When generating the alternative code, the AI successfully followed my constraints to avoid databases and GUIs. However, it assumed that all input data would be perfectly formatted and actually omitted the basic error handling (the blank name check) that existed in the original human code.
+3. **Did AI make assumptions?**  
+When writing the alternative code, the AI properly followed my requirements of not using databases and GUIs. However, it assumed that all input data would be correctly formatted and actually skipped the basic error handling (the blank name check) that existed in the original human code.
 
-5. **How did you verify the AI output?**
-I verified the output by executing several test scenarios in Python, including feeding it normal appointments, intentional double-bookings, blank strings, and `None` values to see exactly where the logic broke down. 
+4. **How did you verify the AI output?**  
+I verified the output by testing the code on several test scenarios in Python, by using it in normal appointments, intentional double-bookings and blank strings values to see exactly where the logic would break. 
 
-6. **What engineering work remained for you?**
-Because the AI's version was overly simplistic, the core engineering work remained for me: I had to manually design and integrate a loop to check existing records and prevent practitioners from being double-booked.
+5. **What engineering work remained for you?**  
+The AI's version was overly simplistic so the core engineering work was left for me, I had to manually design and implement a loop that would check existing records and avoids scheduling a practitioner twice.

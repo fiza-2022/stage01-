@@ -9,6 +9,7 @@ After running the initial human-written prototype, I have found the following fi
 ## Part H - Final Reflection
 
 1. **What did you build before using AI?**
+
 Before using AI, I built a basic Python prototype for the SmartCare clinic that used lists and dictionaries to record patient names, practitioners, and appointment times. While it worked for basic data entry, it had significant limitations, such as lacking validation for double-bookings.
 
 2. **What did AI help you understand?**

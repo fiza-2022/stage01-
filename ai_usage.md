@@ -40,9 +40,4 @@ What would happen if you called display_appointments() before booking any appoin
 
 **My Answers to Copilot's Questions:**
 1. A dictionary is basically a collection of key value pairs that are used to store context about the data stored (e.g."patient": "Alice Smith"). This makes it easier for anyone to understand the code and makes it more readable and organized because anyone can easily tell which key represents what. On the other hand, A list is only store those values which are in a linear format (e.g. "Alice Smith", "Dr. John Doe"). That's why, in order to tell which string is referring to which category, one must remember the specific order of the elements.
-2. (Write your answer to Copilot's second question here)
-
-
-**Microsoft Copilot's Response:**
-```python
-# (Paste the exact Python code Copilot generated here)
+2. The program would successfully run, and it would print out "No appointments recorded". The "display_appointments()" function has a specific "if not appointments:" it checks at the very beginning to handle this scenario and allows the function to exit properly instead of crashing or looping continuously on an empty list.

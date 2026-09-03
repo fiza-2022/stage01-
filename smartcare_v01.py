@@ -46,7 +46,7 @@ def display_appointments():
 print("\n--- PART F: Testing Scenarios ---")
 
 # 1. Normal appointment
-book_appointment("Kaneez Fiza", "Dr. John Doe", "2026-09-10 10:00 AM")
+book_appointment("Alina Jackson", "Dr. John Doe", "2026-09-10 10:00 AM")
 print("Normal appointment booked successfully.")
 
 # 2. Two appointments for the same practitioner at the same time (The second one will now show as failed)

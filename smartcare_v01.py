@@ -33,7 +33,7 @@ def display_appointments():
     for appointment in appointments:
         print(f"Patient: {appointment['patient']} | Practitioner: {appointment['practitioner']} | Time: {appointment['time']}")
 
-## PART F: TESTING SCENERIOS
+## PART F:TESTING SCENERIOS
 print("\n--- PART F: Testing Scenarios ---")
 
 # 1. Normal appointment
@@ -41,23 +41,22 @@ book_appointment("Kaneez Fiza", "Dr. John Doe", "2026-09-10 10:00 AM")
 print("Normal appointment booked successfully.")
 
 # 2. Two appointments for the same practitioner/time
-book_appointment("Ali Khan", "Dr. Jane Roe", "2026-09-11 02:00 PM")
-book_appointment("Sara Ahmed", "Dr. Jane Roe", "2026-09-11 02:00 PM")
+book_appointment("Alex Jones", "Dr. Jane Roe", "2026-09-11 02:00 PM")
+book_appointment("Alice Myers", "Dr. Jane Roe", "2026-09-11 02:00 PM")
 print("Double booking executed.")
 
 # 3. Strange input such as patient_name=None or appointment_time=None
-try:
-    book_appointment(None, "Dr. Adams", None)
+book_appointment(None, "Dr. Adams", None)
 except Exception as e:
-    print(f"Strange input caught: {e}")
+print(f"Strange input caught: {e}")
 
 # 4. Blank patient name
 print("Attempting blank patient name...")
-# book_appointment("", "Dr. Smith", "2026-09-12 09:00 AM") 
+# book_appointment("", "Dr. Smith", "2026-09-12 10:00 AM") 
 # IMPORTANT: If you uncomment the line above, the program will crash with a ValueError!
 
 display_appointments()
-print("Welcome to SmartCare: The Clinical Appointment Booking System!")
-book_appointment('Alice Smith', 'Dr. John Doe', '2024-07-20 10:00 AM')
-book_appointment('Bob Johnson', 'Dr. Jane Roe', '2024-07-20 11:30 AM')
+print("Welcome to SmartCare: The Clinical Appointment Booking System.")
+book_appointment('Alice Myers', 'Dr. John Doe', '2026-09-11 02:00 PM')
+book_appointment('Alex Jones', 'Dr. Jane Roe', '2026-09-11 03:30 PM')
 display_appointments()

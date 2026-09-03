@@ -8,8 +8,8 @@ After running the initial human-written prototype, I have found the following fi
 
 ## Part H - Final Reflection
 
-1. **What did you build before using AI?**
- Before using AI, I built a basic Python prototype for the SmartCare clinic that used lists and dictionaries to record patient names, practitioners, and appointment times. While it worked for basic data entry, it had significant limitations, such as lacking validation for double-bookings.
+1. **What did you build before using AI?**  
+Before using AI, I built a basic Python prototype for the SmartCare clinic that used lists and dictionaries to record patient names, practitioners, and appointment times. While it worked for basic data entry, it had significant limitations, such as lacking validation for double-bookings.
 
 3. **What did AI help you understand?**
 Using Microsoft Copilot as a tutor helped me better understand how to clearly explain dictionary structures and why conditional checks (like `if not appointments:`) are vital to prevent crashes when accessing empty lists. 

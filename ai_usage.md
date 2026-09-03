@@ -41,3 +41,36 @@ What would happen if you called display_appointments() before booking any appoin
 **My Answers to Copilot's Questions:**
 1. A dictionary is basically a collection of key value pairs that are used to store context about the data stored (e.g."patient": "Alice Smith"). This makes it easier for anyone to understand the code and makes it more readable and organized because anyone can easily tell which key represents what. On the other hand, A list is only store those values which are in a linear format (e.g. "Alice Smith", "Dr. John Doe"). That's why, in order to tell which string is referring to which category, one must remember the specific order of the elements.
 2. The program would successfully run, and it would print out "No appointments recorded". The "display_appointments()" function has a specific "if not appointments:" it checks at the very beginning to handle this scenario and allows the function to exit properly instead of crashing or looping continuously on an empty list.
+
+## Part D - Generate an Alternative
+
+**My Prompt:**
+> Create a simple beginner-friendly Python function that stores patient name, practitioner name and appointment time. Do not use a database or a GUI.
+
+**Microsoft Copilot's Response:**
+```python
+# # A list to store all appointments
+appointments = []
+
+def book_appointment(patient_name, practitioner_name, appointment_time):
+    # Create a dictionary for the appointment
+    appointment = {
+        "patient": patient_name,
+        "practitioner": practitioner_name,
+        "time": appointment_time
+    }
+    # Add the appointment to the list
+    appointments.append(appointment)
+
+def display_appointments():
+    if not appointments:
+        print("No appointments recorded.")
+    else:
+        for appointment in appointments:
+            print(f"Patient: {appointment['patient']} | Practitioner: {appointment['practitioner']} | Time: {appointment['time']}")
+
+# Example usage
+book_appointment("Alice Smith", "Dr. John Doe", "2026-09-05 10:00 AM")
+book_appointment("Bob Johnson", "Dr. Jane Roe", "2026-09-05 11:30 AM")
+
+display_appointments()

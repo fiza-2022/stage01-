@@ -1,5 +1,6 @@
 # TASK 1: Basic Input/Output
 # Create and run a simple Python file with basic input,output statements
+```python
 print("Welcome to SmartCare: Community Clinic Appointment Booking System!")
 # First Appointment
 patient1_name = 'Alice Smith'

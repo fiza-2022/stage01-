@@ -34,9 +34,9 @@ def display_appointments():
         print(f"Patient: {appointment['patient']} | Practitioner: {appointment['practitioner']} | Time: {appointment['time']}")
 
 ## PART F:TESTING SCENERIOS
-print("\n--- PART F: Testing Scenarios ---")
 
-# 1. Normal appointment
+
+** 1. Normal appointment
 book_appointment("Kaneez Fiza", "Dr. John Doe", "2026-09-10 10:00 AM")
 print("Normal appointment booked successfully.")
 

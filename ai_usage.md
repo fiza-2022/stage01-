@@ -9,7 +9,7 @@
 > 4. Do not rewrite the whole application.
 > 5. Ask me two questions to test my understanding.
 
-**Microsoft Copilot's Response:**
+## Microsoft Copilot's Response:
 📝 What the code does
 appointments list: Keeps track of all booked appointments as dictionaries inside a list.
 
